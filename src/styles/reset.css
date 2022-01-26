@@ -1,8 +1,12 @@
 @import 'reset-css';
 
+* {
+	box-sizing: border-box;
+}
 html,
 body {
 	font-family: 'latoRegular';
+	color: #7a7e82;
 }
 @media screen and (min-width: 577px) {
 	html,
@@ -15,4 +19,7 @@ body {
 	body {
 		font-size: calc(0px + 10 * (100vw / 576));
 	}
+}
+input {
+	outline: none;
 }

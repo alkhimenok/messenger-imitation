@@ -10,6 +10,7 @@ import {
 	THIRD_COLOR,
 	PRIMARY_DARK_COLOR,
 	SECONDARY_DARK_COLOR,
+	SECONDARY_FONT,
 	BORDER_RADIUS_SIZE,
 	DELAY
 } from '../../../constants/constants'
@@ -33,6 +34,7 @@ export const NavItem = styled.li`
 export const NavLink = styled.a`
 	position: relative;
 	padding: ${XS_SIZE} ${SM_SIZE};
+	font-family: ${SECONDARY_FONT};
 	font-size: ${MD_SIZE};
 	text-transform: capitalize;
 	text-decoration: none;
