@@ -1,15 +1,18 @@
 import React from 'react'
+// import { BrowseRouter } from 'react-router-dom'
 import HeaderSection from './components/header/Header'
 // import Main from './components/Main'
 // import Footer from './components/Footer'
 
 const App = () => {
 	return (
-		<div className="wrapper">
-			<HeaderSection />
-			{/* <Main />
+		// <BrowseRouter>
+			<div className="wrapper">
+				<HeaderSection />
+				{/* <Main />react-router-dom
 			<Footer /> */}
-		</div>
+			</div>
+		// </BrowseRouter>
 	)
 }
 
