@@ -1,3 +1,22 @@
+/* ----- icons */
+@import './styles/icons.css';
+/* icons ----- */
+
+/* ----- fonts */
+@import './styles/fonts.css';
+/* fonts ----- */
+
 /* ----- reset */
 @import 'reset-css';
 /* reset ----- */
+
+@media screen and (min-width: 577px) {
+  html, body {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  html, body {
+    font-size: calc(0px + 10 * (100vw / 576));
+  }
+}
