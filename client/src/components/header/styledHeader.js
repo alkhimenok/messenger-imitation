@@ -10,11 +10,7 @@ import {
 	SECONDARY_FONT
 } from '../../constants/constants'
 
-export const Container = styled.div`
-	max-width: ${MAX_WIDTH};
-	margin: 0 auto;
-`
-
-export const Body = styled.div`
-	padding: 0 ${BASE_SIZE};
+export const HeaderSection = styled.header`
+	padding: calc(${BASE_SIZE} * 2) 0;
+	background-color: ${PRIMARY_COLOR};
 `

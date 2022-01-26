@@ -8,13 +8,13 @@ import {
 	SECONDARY_TEXT_COLOR,
 	PRIMARY_FONT,
 	SECONDARY_FONT
-} from '../../constants/constants'
+} from '../../../constants/constants'
 
-export const Container = styled.div`
-	max-width: ${MAX_WIDTH};
-	margin: 0 auto;
+export const NavSection = styled.nav`
 `
-
-export const Body = styled.div`
-	padding: 0 ${BASE_SIZE};
+export const NavList = styled.ul`
+`
+export const NavItem = styled.li`
+`
+export const NavLink = styled.a`
 `

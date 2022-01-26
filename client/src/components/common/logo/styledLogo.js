@@ -8,9 +8,9 @@ import {
 	SECONDARY_TEXT_COLOR,
 	PRIMARY_FONT,
 	SECONDARY_FONT
-} from '../../constants/constants'
+} from '../../../constants/constants'
 
-export const Logo = styled.a`
+export const LogoText = styled.a`
 	font-size: calc(${BASE_SIZE} * 3);
 	text-transform: uppercase;
 	color: ${PRIMARY_TEXT_COLOR};
