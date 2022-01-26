@@ -1,6 +1,10 @@
+// cSpell:ignore latoRegular, latoBold
+
 export const MAX_WIDTH = '1200px'
 export const BASE_SIZE = '1rem'
 export const PRIMARY_COLOR = '#4a82bc'
 export const SECONDARY_COLOR = '#aacbef'
 export const PRIMARY_TEXT_COLOR = '#ffffff'
 export const SECONDARY_TEXT_COLOR = '#71757a'
+export const PRIMARY_FONT = 'latoRegular'
+export const SECONDARY_FONT = 'latoBold'
