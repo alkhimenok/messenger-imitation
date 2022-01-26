@@ -7,3 +7,12 @@ export const getDisplayFlex = (alignItems = 'center', justifyContent = 'center',
     flex-wrap: ${flexWrap};
   `
 }
+
+export const getCenterPosition = () => {
+	return `
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  `
+}

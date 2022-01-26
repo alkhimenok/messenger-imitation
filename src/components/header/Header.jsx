@@ -20,7 +20,7 @@ const Header = () => {
 			<Container className="header__container">
 				<Body className="header__body">
 					<Logo parentBlockClass={'header__logo'} />
-					<Nav parentBlockClass={'header__nav'} linkList={linkList} handleClick={handleClick} />
+					<Nav parentBlockClass={'header__nav'} linkList={linkList} handleClick={handleClick} them='light' />
 				</Body>
 			</Container>
 		</HeaderSection>
