@@ -3,7 +3,6 @@ import Search from '../common/search/Search'
 import { SidebarSection, SidebarList } from './styledSidebar'
 
 const Sidebar = ({ parentBlockClass }) => {
-	console.log()
 	return (
 		<SidebarSection className={[parentBlockClass, 'sidebar'].join(' ')}>
 			<Search parentBlockClass="sidebar__search" />

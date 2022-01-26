@@ -20,9 +20,9 @@ export const BurgerIcon = styled.div`
 		${getDisplayFlex('center', 'space-between', 'column')}
 		padding: calc(${BASE_SIZE} * 0.7) 0 0 0;
 		box-sizing: content-box;
-    transition: ${DELAY};
+		transition: ${DELAY};
 		&::before,
-    &::after {
+		&::after {
 			content: '';
 			width: 100%;
 			height: 15%;

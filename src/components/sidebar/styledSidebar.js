@@ -1,10 +1,5 @@
 import styled from 'styled-components'
-import {
-	BASE_SIZE,
-	DELAY,
-	BREAKPOINT_XS_MAX,
-	BREAKPOINT_SM_MIN
-} from '../../constants/constants'
+import { BASE_SIZE, DELAY, BREAKPOINT_XS_MAX, BREAKPOINT_SM_MIN } from '../../constants/constants'
 
 export const SidebarSection = styled.aside`
 	position: absolute;
