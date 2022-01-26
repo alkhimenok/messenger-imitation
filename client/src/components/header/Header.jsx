@@ -6,9 +6,9 @@ import { HeaderSection } from './styledHeader'
 
 const Header = () => {
 	const linkList = [
-		{ id: null, content: 1, href: '#' },
-		{ id: null, content: 2, href: '#' },
-		{ id: null, content: 3, href: '#' }
+		{ id: null, content: 'hellllllllllllllllllllo', href: '#' },
+		{ id: null, content: 'hellllllllllllllllllllo', href: '#' },
+		{ id: null, content: 'hellllllllllllllllllllo', href: '#' }
 	]
 
 	const handleClick = (e) => {
