@@ -2,6 +2,12 @@ import styled from 'styled-components'
 import {
 	MAX_WIDTH,
 	BASE_SIZE,
+	XS_S1IZE,
+	SM_SIZE,
+	MD_SIZE,
+	LG_SIZE,
+	XL_SIZE,
+	XXL_SIZE,
 	PRIMARY_COLOR,
 	SECONDARY_COLOR,
 	PRIMARY_TEXT_COLOR,
@@ -16,5 +22,5 @@ export const Container = styled.div`
 `
 
 export const Body = styled.div`
-	padding: 0 ${BASE_SIZE};
+	padding: 0 ${XS_S1IZE};
 `

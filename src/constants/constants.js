@@ -2,6 +2,12 @@
 
 export const MAX_WIDTH = '1200px'
 export const BASE_SIZE = '1rem'
+export const XS_S1IZE = parseInt(BASE_SIZE) * 1 + 'rem'
+export const SM_SIZE = parseInt(BASE_SIZE) * 1.5 + 'rem'
+export const MD_SIZE = parseInt(BASE_SIZE) * 2 + 'rem'
+export const LG_SIZE = parseInt(BASE_SIZE) * 3 + 'rem'
+export const XL_SIZE = parseInt(BASE_SIZE) * 4 + 'rem'
+export const XXL_SIZE = parseInt(BASE_SIZE) * 5 + 'rem'
 export const PRIMARY_COLOR = '#4a82bc'
 export const SECONDARY_COLOR = '#aacbef'
 export const PRIMARY_TEXT_COLOR = '#ffffff'

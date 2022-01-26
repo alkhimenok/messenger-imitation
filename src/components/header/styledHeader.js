@@ -2,6 +2,12 @@ import styled from 'styled-components'
 import {
 	MAX_WIDTH,
 	BASE_SIZE,
+	XS_S1IZE,
+	SM_SIZE,
+	MD_SIZE,
+	LG_SIZE,
+	XL_SIZE,
+	XXL_SIZE,
 	PRIMARY_COLOR,
 	SECONDARY_COLOR,
 	PRIMARY_TEXT_COLOR,
@@ -11,6 +17,6 @@ import {
 } from '../../constants/constants'
 
 export const HeaderSection = styled.header`
-	padding: calc(${BASE_SIZE} * 2) 0;
+	padding: ${MD_SIZE} 0;
 	background-color: ${PRIMARY_COLOR};
 `
