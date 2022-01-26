@@ -34,7 +34,6 @@ export const NavItem = styled.li`
 export const NavLink = styled.a`
 	position: relative;
 	padding: ${XS_SIZE} ${SM_SIZE};
-	font-family: ${SECONDARY_FONT};
 	font-size: ${MD_SIZE};
 	text-transform: capitalize;
 	text-decoration: none;
@@ -46,7 +45,7 @@ export const NavLink = styled.a`
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		height: calc(${BASE_SIZE} * 0.3);
+		height: calc(${BASE_SIZE} * 0.2);
 		border-radius: ${SM_SIZE} ${SM_SIZE} 0 0;
 	}
 	&.--light {
