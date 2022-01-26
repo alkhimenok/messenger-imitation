@@ -1,12 +1,12 @@
 import React from 'react'
 import { SearchSection, SearchInput, SearchLabel } from './styledSearch'
 
-const Search = () => {
+const Search = ({ parentBlockClass }) => {
 	return (
-		<SearchSection className="sidebar__header">
-			<SearchInput className="sidebar__search" id="search" type="text" />
-			<SearchLabel className="sidebar__label" for="search">
-				<i className="sidebar__icon icon-search"></i>
+		<SearchSection className={[parentBlockClass, 'search'].join(' ')}>
+			<SearchInput className="search__input" id="search" placeholder='Search' type="text" />
+			<SearchLabel className="search__label" htmlFor="search">
+				<i className="search__icon icon-search"></i>
 			</SearchLabel>
 		</SearchSection>
 	)

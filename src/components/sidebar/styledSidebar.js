@@ -1,14 +1,25 @@
 import styled from 'styled-components'
 import {
-	SM_SIZE,
-	LG_SIZE,
-	PRIMARY_COLOR,
-	PRIMARY_DARK_COLOR,
-	SECONDARY_DARK_COLOR,
-	BORDER_RADIUS_SIZE_CIRCLE,
-	THIN_BORDER,
-	DELAY
+	BASE_SIZE,
+	DELAY,
+	BREAKPOINT_XS_MAX,
+	BREAKPOINT_SM_MIN
 } from '../../constants/constants'
 
-export const SidebarSection = styled.aside``
+export const SidebarSection = styled.aside`
+	position: absolute;
+	top: 0;
+	transition: ${DELAY};
+	@media screen and (max-width: ${BREAKPOINT_XS_MAX}) {
+		left: -110%;
+		width: 100%;
+		&.--show {
+			left: 0;
+		}
+	}
+	@media screen and (min-width: ${BREAKPOINT_SM_MIN}) {
+		left: 0;
+		width: calc(${BASE_SIZE} * 40);
+	}
+`
 export const SidebarList = styled.ul``

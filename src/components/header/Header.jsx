@@ -19,7 +19,7 @@ const Header = () => {
 				<Body className="header__body">
 					<HeaderContent className="header__content">
 						<Nav parentBlockClass="header__nav" linkList={linkList} handleClick={handleClick} them="light" />
-						<Logo parentBlockClass='header__logo' />
+						<Logo parentBlockClass="header__logo" />
 					</HeaderContent>
 				</Body>
 			</Container>
