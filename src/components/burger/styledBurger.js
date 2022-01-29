@@ -31,7 +31,7 @@ export const BurgerIcon = styled.div`
 		}
 		&.close {
 			transform: rotate(45deg);
-			.burger__line {
+			span {
 				opacity: 0;
 			}
 			&::before,

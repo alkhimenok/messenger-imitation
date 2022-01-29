@@ -10,20 +10,11 @@ import {
 	BORDER_RADIUS_SIZE_CIRCLE,
 	THIN_BORDER,
 	DELAY,
-	BREAKPOINT_XS_MAX,
-	BREAKPOINT_SM_MIN
 } from '../../../constants/constants'
 
 export const SearchSection = styled.section`
 	position: relative;
 	z-index: 2;
-	@media screen and (max-width: ${BREAKPOINT_XS_MAX}) {
-		width: 90%;
-		margin: auto 0 auto auto;
-	}
-	@media screen and (min-width: ${BREAKPOINT_SM_MIN}) {
-		width: 100%;
-	}
 `
 export const SearchInput = styled.input`
 	width: 100%;
