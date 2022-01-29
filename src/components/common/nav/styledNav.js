@@ -10,7 +10,6 @@ import {
 	THIRD_COLOR,
 	PRIMARY_DARK_COLOR,
 	SECONDARY_DARK_COLOR,
-	SECONDARY_FONT,
 	BORDER_RADIUS_SIZE,
 	DELAY
 } from '../../../constants/constants'
@@ -36,7 +35,6 @@ export const NavLink = styled.a`
 	padding: ${XS_SIZE} ${SM_SIZE};
 	font-size: ${MD_SIZE};
 	text-transform: capitalize;
-	text-decoration: none;
 	border-radius: ${BORDER_RADIUS_SIZE};
 	transition: ${DELAY};
 	&::before {
@@ -46,7 +44,7 @@ export const NavLink = styled.a`
 		left: 0;
 		width: 100%;
 		height: calc(${BASE_SIZE} * 0.2);
-		border-radius: ${SM_SIZE} ${SM_SIZE} 0 0;
+		border-radius: ${MD_SIZE} ${MD_SIZE} 0 0;
 	}
 	&.--light {
 		color: ${THIRD_COLOR};

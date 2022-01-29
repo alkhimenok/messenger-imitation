@@ -5,4 +5,5 @@ export const LogoText = styled.a`
 	font-size: ${XL_SIZE};
 	text-transform: uppercase;
 	color: ${THIRD_COLOR};
+	cursor: pointer;
 `
