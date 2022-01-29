@@ -1,10 +1,34 @@
 import styled from 'styled-components'
 import { getDisplayFlex } from '../../utils/styledUtils'
-import { XS_SIZE, SM_SIZE, MD_SIZE, XXL_SIZE, THIRD_DARK_COLOR } from '../../constants/constants'
+import {
+	XS_SIZE,
+	SM_SIZE,
+	MD_SIZE,
+	XXL_SIZE,
+	PRIMARY_COLOR,
+	THIRD_COLOR,
+	PRIMARY_DARK_COLOR,
+	THIRD_DARK_COLOR,
+	DELAY,
+	BORDER_RADIUS_SIZE
+} from '../../constants/constants'
 
-export const DialogueSection = styled.section`
+export const DialogueSection = styled.li`
 	${getDisplayFlex('center', 'flex-start')}
+	padding: ${XS_SIZE};
+	border-radius: ${BORDER_RADIUS_SIZE};
+	transition: ${DELAY};
 	cursor: pointer;
+	&:hover {
+		background-color: ${PRIMARY_DARK_COLOR};
+	}
+	&.--selected {
+		background-color: ${PRIMARY_COLOR};
+		.dialogue__title,
+		.dialogue__message {
+			color: ${THIRD_COLOR};
+		}
+	}
 `
 export const DialoguePicture = styled.img`
 	width: ${XXL_SIZE};

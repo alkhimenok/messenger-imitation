@@ -16,3 +16,18 @@ export const getCenterPosition = () => {
     transform: translate(-50%, -50%);
   `
 }
+
+export const getScroll = (scrollWidth = '4px', trackColor = 'gray', thumbColor = 'blue', fillets = '10px') => {
+	return `
+    &::-webkit-scrollbar {
+      width: ${scrollWidth} !important;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: ${trackColor};
+    }
+    &::-webkit-scrollbar-thumb {
+      background: ${thumbColor};
+      border-radius: ${fillets};
+    }
+  `
+}

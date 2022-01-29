@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import { BrowseRouter } from 'react-router-dom'
 import Header from './components/header/Header'
 import Main from './components/main/Main'

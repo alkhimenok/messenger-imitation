@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { uid } from 'uid'
 import { NavSection, NavList, NavItem, NavLink } from './styledNav'
 
-const Nav = ({ parentBlockClass, linkList, handleClick, them = 'light' }) => {
+const Nav = ({ parentBlockClass, id, linkList, handleClick, them = 'light' }) => {
 	const [indexCurrentLink, setIndexCurrentLink] = useState(0)
 
 	return (
-		<NavSection className={[parentBlockClass, 'nav'].join(' ')}>
+		<NavSection className={[parentBlockClass, 'nav'].join(' ')} id={id}>
 			<NavList className="nav__list">
 				{linkList.map(({ id, content, href }, i) => (
 					<NavItem className="nav__item" id={id} key={uid()}>

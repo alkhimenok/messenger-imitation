@@ -14,11 +14,12 @@ const Header = () => {
 	const handleClick = e => e.preventDefault()
 
 	return (
-		<HeaderSection className="header">
+		<HeaderSection className="header" id="header">
 			<Container className="header__container">
 				<Body className="header__body">
 					<HeaderContent className="header__content">
-						<Nav parentBlockClass="header__nav" linkList={linkList} handleClick={handleClick} them="light" />
+						<div></div>
+						{/* <Nav parentBlockClass="header__nav" linkList={linkList} handleClick={handleClick} them="light" /> */}
 						<Logo parentBlockClass="header__logo" />
 					</HeaderContent>
 				</Body>

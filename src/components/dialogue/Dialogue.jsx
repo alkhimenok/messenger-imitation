@@ -9,7 +9,7 @@ const Dialogue = ({ parentBlockClass, options }) => {
 	}
 
 	return (
-		<DialogueSection className={[parentBlockClass, 'dialogue'].join(' ')}>
+		<DialogueSection className={[parentBlockClass, 'dialogue', options.isSelected ? '--selected' : ''].join(' ')}>
 			<DialoguePicture className="dialogue__picture" src={options.picture || defaultOptions.picture} />
 			<DialogueInfo className="dialogue__info">
 				<DialogueTitle className="dialogue__title">{options.title || defaultOptions.title}</DialogueTitle>

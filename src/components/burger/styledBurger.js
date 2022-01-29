@@ -1,24 +1,23 @@
 import styled from 'styled-components'
 import { getDisplayFlex } from '../../utils/styledUtils'
 import {
-	BASE_SIZE,
 	LG_SIZE,
 	XL_SIZE,
 	PRIMARY_COLOR,
 	ERROR_COLOR,
 	DELAY,
-	BREAKPOINT_XS_MAX,
-	BREAKPOINT_SM_MIN
+	BREAKPOINT_SM_MAX,
+	BREAKPOINT_MD_MIN
 } from '../../constants/constants'
 
 export const BurgerIcon = styled.div`
-	@media screen and (max-width: ${BREAKPOINT_XS_MAX}) {
+	@media screen and (max-width: ${BREAKPOINT_SM_MAX}) {
 		position: relative;
 		z-index: 3;
 		width: ${XL_SIZE};
 		height: ${LG_SIZE};
 		${getDisplayFlex('center', 'space-between', 'column')}
-		padding: calc(${BASE_SIZE} * 0.7) 0 0 0;
+		padding: calc(${LG_SIZE}) 0 0 0;
 		box-sizing: content-box;
 		transition: ${DELAY};
 		&::before,
@@ -46,12 +45,12 @@ export const BurgerIcon = styled.div`
 			}
 		}
 	}
-	@media screen and (min-width: ${BREAKPOINT_SM_MIN}) {
+	@media screen and (min-width: ${BREAKPOINT_MD_MIN}) {
 		display: none;
 	}
 `
 export const BurgerLine = styled.span`
-	@media screen and (max-width: ${BREAKPOINT_XS_MAX}) {
+	@media screen and (max-width: ${BREAKPOINT_SM_MAX}) {
 		width: 100%;
 		height: 15%;
 		background-color: ${PRIMARY_COLOR};
