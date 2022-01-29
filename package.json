@@ -5,9 +5,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "server": "nodemon app.js",
     "client:install": "npm install --prefix client",
-    "client:build": "npm run build --prefix client"
+    "client:start": "npm run start --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "concurrently \"npm run client:build\" \"npm run server\"",
+    "prod": "concurrently \"npm run client:build\" \"npm run start\""
   },
   "repository": {
     "type": "git",
@@ -24,6 +28,7 @@
     "express": "^4.17.2"
   },
   "devDependencies": {
+    "concurrently": "^7.0.0",
     "nodemon": "^2.0.15"
   }
 }
