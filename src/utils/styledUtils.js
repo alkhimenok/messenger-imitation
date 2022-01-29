@@ -17,17 +17,30 @@ export const getCenterPosition = () => {
   `
 }
 
-export const getScroll = (scrollWidth = '4px', trackColor = 'gray', thumbColor = 'blue', fillets = '10px') => {
-	return `
-    &::-webkit-scrollbar {
-      width: ${scrollWidth} !important;
-    }
-    &::-webkit-scrollbar-track {
-      background-color: ${trackColor};
-    }
-    &::-webkit-scrollbar-thumb {
-      background: ${thumbColor};
-      border-radius: ${fillets};
-    }
-  `
+export const getScroll = (scrollWidth = '4px', trackColor = 'gray', thumbColor = 'blue', fillets = '10px', isHide = false) => {
+	return isHide
+		? `
+        &::-webkit-scrollbar { 
+          width: 0;
+          height: 0;
+        }
+        & { 
+          -ms-overflow-style: none;
+        }
+        & { 
+          overflow: -moz-scrollbars-none; 
+        }
+      `
+		: `
+        &::-webkit-scrollbar {
+          width: ${scrollWidth} !important;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: ${trackColor};
+        }
+        &::-webkit-scrollbar-thumb {
+          background: ${thumbColor};
+          border-radius: ${fillets};
+        }
+      `
 }

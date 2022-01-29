@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { getDisplayFlex } from '../../../utils/styledUtils'
+import { getDisplayFlex, getScroll } from '../../../utils/styledUtils'
 import {
 	BASE_SIZE,
 	XS_SIZE,
@@ -19,22 +19,27 @@ export const NavSection = styled.nav`
 	background-color: transparent;
 `
 export const NavList = styled.ul`
-	${getDisplayFlex('center', 'space-between', 'row', 'wrap')}
+	${getDisplayFlex('center', 'space-between', 'row', 'nowrap')}
+	max-width: 100%;
+	overflow: auto;
 	& > :first-child {
 		margin-left: 0;
 	}
 	& > :last-child {
 		margin-right: 0;
 	}
+	${getScroll('', '', '', '', true)}
 `
 export const NavItem = styled.li`
 	margin: 0 ${MD_SIZE};
 `
 export const NavLink = styled.a`
 	position: relative;
+	display: block;
 	padding: ${XS_SIZE} ${SM_SIZE};
 	font-size: ${MD_SIZE};
 	text-transform: capitalize;
+	white-space: nowrap;
 	border-radius: ${BORDER_RADIUS_SIZE};
 	transition: ${DELAY};
 	&::before {

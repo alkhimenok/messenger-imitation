@@ -6,32 +6,8 @@ import { MainSection, MainContent } from './styledMain'
 
 const Main = () => {
 	const dialogueList = [
-		{
-			picture: './images/picture.jpeg',
-			title: '101',
-			message:
-				'hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101',
-			isSelected: true
-		},
-		{ picture: '', title: '', message: '', isSelected: false },
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{},
-		{}
+		{ picture: './images/picture.jpeg', title: '101', message: 'hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101', isSelected: true },
+		{ picture: '', title: '', message: '' }, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}
 	]
 
 	const [sidebarShow, setSidebarShow] = useState(false)
@@ -46,7 +22,8 @@ const Main = () => {
 						<Burger parentBlockClass="main__burger" handleClick={handleClick} />
 						<Sidebar
 							parentBlockClass={'main__sidebar' + `${sidebarShow ? ' --show' : ''}`}
-							dialogueList={dialogueList || []}></Sidebar>
+							dialogueList={dialogueList || []}>
+						</Sidebar>
 					</MainContent>
 				</Body>
 			</Container>

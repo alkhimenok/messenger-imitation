@@ -1,7 +1,7 @@
 import React from 'react'
 import { DialogueSection, DialoguePicture, DialogueInfo, DialogueTitle, DialogueMessage } from './styledDialogue'
 
-const Dialogue = ({ parentBlockClass, options }) => {
+const Dialogue = ({ parentBlockClass, options, handleClick }) => {
 	const defaultOptions = {
 		picture: './images/defaultPicture.png',
 		title: 'unknown',
@@ -9,7 +9,9 @@ const Dialogue = ({ parentBlockClass, options }) => {
 	}
 
 	return (
-		<DialogueSection className={[parentBlockClass, 'dialogue', options.isSelected ? '--selected' : ''].join(' ')}>
+		<DialogueSection
+			className={[parentBlockClass, 'dialogue'].join(' ')}
+			onClick={handleClick}>
 			<DialoguePicture className="dialogue__picture" src={options.picture || defaultOptions.picture} />
 			<DialogueInfo className="dialogue__info">
 				<DialogueTitle className="dialogue__title">{options.title || defaultOptions.title}</DialogueTitle>

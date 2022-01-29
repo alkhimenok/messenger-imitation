@@ -29,6 +29,9 @@ export const DialogueSection = styled.li`
 			color: ${THIRD_COLOR};
 		}
 	}
+	* {
+		pointer-events: none;
+	}
 `
 export const DialoguePicture = styled.img`
 	width: ${XXL_SIZE};
