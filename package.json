@@ -1,0 +1,26 @@
+{
+  "name": "messenger-imitation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alkhimenok/messenger-imitation.git"
+  },
+  "keywords": [],
+  "author": "Kirill Alkhimenok <alkhimenok.kirill.leonidovich@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alkhimenok/messenger-imitation/issues"
+  },
+  "homepage": "https://github.com/alkhimenok/messenger-imitation#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
