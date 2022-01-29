@@ -49,6 +49,7 @@ export const SidebarSection = styled.aside`
 	}
 `
 export const SidebarList = styled.ul`
+	position: relative;
 	${getScroll(XS_SIZE, 'transparent', PRIMARY_DARK_COLOR)}
 	overflow: auto;
 `

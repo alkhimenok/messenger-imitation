@@ -1,18 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import Burger from '../burger/Burger'
 import Sidebar from '../sidebar/Sidebar'
 import { Container, Body } from '../common/styleComponents'
 import { MainSection, MainContent } from './styledMain'
+import { addRequest } from '../../scripts/request'
 
 const Main = () => {
-	const dialogueList = [
-		{ picture: './images/picture.jpeg', title: '101', message: 'hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101, hello my name is 101', isSelected: true },
-		{ picture: '', title: '', message: '' }, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}
-	]
-
 	const [sidebarShow, setSidebarShow] = useState(false)
+	const [dialogues, setDialogues] = useState({ dialogueList: [], isDataReceived: false })
 
 	const handleClick = () => setSidebarShow(!sidebarShow)
+
+	useEffect(async () => {
+		const data = await addRequest('/api/dialogues')
+
+		setDialogues({ dialogueList: data, isDataReceived: true })
+	}, [])
 
 	return (
 		<MainSection className="main">
@@ -20,10 +23,7 @@ const Main = () => {
 				<Body className="main__body">
 					<MainContent className="main__content">
 						<Burger parentBlockClass="main__burger" handleClick={handleClick} />
-						<Sidebar
-							parentBlockClass={'main__sidebar' + `${sidebarShow ? ' --show' : ''}`}
-							dialogueList={dialogueList || []}>
-						</Sidebar>
+						<Sidebar parentBlockClass={'main__sidebar' + `${sidebarShow ? ' --show' : ''}`} dialogues={dialogues}></Sidebar>
 					</MainContent>
 				</Body>
 			</Container>
